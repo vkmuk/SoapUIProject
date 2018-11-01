@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9b111d00-9197-4a65-922b-d16fe0267f18" activeEnvironment="Default" name="ApiDefraVMD" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="2.5.0 2018-09-14T14:45:07Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="780bca3e-180a-4055-86a1-51205ec310cc" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sndvmdwebawa001.azurewebsites.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://sndvmdwebawa001.azurewebsites.net</con:endpoint>
+    </con:endpoints>
+    <con:resource name="OccurCountries" path="/api/Countries/OccurCountries" id="a588ba85-e525-4e12-b209-aa20a2702270">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="OccurCountries" id="91672d46-a0e6-4fa7-9cd9-abe9d12aa084" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:occ="https://sndvmdwebawa001.azurewebsites.net/api/Countries/OccurCountries">occ:Fault</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="OccurCountries" id="29adebea-28af-416c-8429-7ce9729c9849" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Countries/OccurCountries</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="PrimaryCountries" path="/api/Countries/PrimaryCountries" id="5dc71875-7c41-4635-b420-2a5c7d2d8b4c">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="PrimaryCountries" id="e6cf5dc3-b067-4eaa-895e-e1bac7f758e7" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:prim="https://sndvmdwebawa001.azurewebsites.net/api/Countries/PrimaryCountries">prim:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="PrimaryCountries" id="16839d0b-a5e3-428e-9687-c56a6b32c36f" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Countries/PrimaryCountries</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="AuthorisationCountries" path="/api/Countries/AuthorisationCountries" id="7c683142-b0c0-4f05-ac27-340666bb4a6d">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="AuthorisationCountries" id="49995155-828c-447d-93e3-4fa98c18df1a" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:aut="https://sndvmdwebawa001.azurewebsites.net/api/Countries/AuthorisationCountries">aut:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="AuthorisationCountries" id="835dfca6-608d-4d8e-8ecf-96721e5a8a2b" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Countries/AuthorisationCountries</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="3ed6788c-1e61-4559-9b85-2effa5c77d86" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sndvmdwebawa001.azurewebsites.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://sndvmdwebawa001.azurewebsites.net</con:endpoint>
+    </con:endpoints>
+    <con:resource name="DosageForms" path="/api/Drug/DosageForms" id="7d09e182-9b5d-4637-8683-569ef336eea8">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="DosageForms" id="f1612546-7898-43c7-8c42-f2c9c4b760a3" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:dos="https://sndvmdwebawa001.azurewebsites.net/api/Drug/DosageForms">dos:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="DosageForms" id="1f3f355a-bc01-4bc6-9d74-fbc3d7db5d9a" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/DosageForms</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="DosageUnits" path="/api/Drug/DosageUnits" id="98610a6e-9821-45bd-9a2a-8426652d4224">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="DosageUnits" id="5eb49d01-8a23-4435-b67f-2a1850a7e352" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="DosageUnits" id="08a5237b-89ff-4e9e-b44a-2e0ab623fe92" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/DosageUnits</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="AdminRoutes" path="/api/Drug/AdminRoutes" id="f7691f11-6ef5-40ef-be15-ad623a9b34bb">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="AdminRoutes" id="d99334e9-4f57-465f-9a2f-367057c8aefc" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:adm="https://sndvmdwebawa001.azurewebsites.net/api/Drug/AdminRoutes">adm:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="AdminRoutes" id="606cd87f-1ae8-463c-9ddf-bb75f1defcce" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/AdminRoutes</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Substances" path="/api/Drug/Substances" id="13d1411d-cd9c-4c61-a822-4d389c82f9df">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>id</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Substances" id="c4d78426-0a9d-4559-b2c1-858dcdeaab67" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:sub="https://sndvmdwebawa001.azurewebsites.net/api/Drug/Substances">sub:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Substances" id="be30d83b-71cc-406a-a304-fdff1a89e292" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/Substances</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="id" value="I2068" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Products" path="/api/Drug/Products" id="a7b94e14-ec8a-403d-8b70-4c5545fc16fc">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Products" id="f7c672b3-e734-4ce7-bc39-11d0ebc339ef" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Products" id="09901e18-fe12-41d9-a605-4052531298a8" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/Products</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="ProductByid" path="/api/Drug/Product/" id="20f19f17-b54b-4a44-93fb-b8f82a3f3a52">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>id</con:name>
+          <con:style>QUERY</con:style>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="ProductByid" id="26f3a7a3-7a5f-49f4-8ea2-59ead3958f6c" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:id="https://sndvmdwebawa001.azurewebsites.net/api/Drug/Product/id">id:Fault</con:element>
+        </con:representation>
+        <con:request name="ProductByid" id="bb3a6fa2-e716-4de9-9604-9a274f97beb3" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/Product/id</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="id" value="A05169" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="AuthorisationNumbers" path="/api/Drug/AuthorisationNumbers" id="9b3d119e-a936-4c18-8413-2c9c13a8df56">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="AuthorisationNumbers" id="6ef26fb2-9b12-4fa5-aaff-14377032898c" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="AuthorisationNumbers" id="1cc62d63-5e2e-463d-9080-add979c85bb5" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/AuthorisationNumbers</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="AuthorisationCompanies" path="/api/Drug/AuthorisationCompanies" id="22ff7ee1-675e-42a7-b351-a67e3e333dc2">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="AuthorisationCompanies" id="edcd2d0e-0857-4440-b964-05de0b694567" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="AuthorisationCompanies" id="e25535a5-6ff1-40f3-b8de-b9b28b0821c3" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/AuthorisationCompanies</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="5f70d1df-eb4f-4e65-8e73-4637431f2591" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sndvmdwebawa001.azurewebsites.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://sndvmdwebawa001.azurewebsites.net</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Animal" path="/api/Veddra/Animal" id="b6ab8516-516b-404f-9f21-83921d0d0ad0">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Animal" id="a9603b54-fe80-4c4e-9de6-c0bc9bc0bebc" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Animal" id="4f9dfd02-3ede-4489-90f6-1a477f224302" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Veddra/Animal</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Human" path="/api/Veddra/Human" id="5e3ce26c-27d2-4c63-a078-d96381508424">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Human" id="d4890701-f51d-4442-b41e-e6fd19b75cc1" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Human" id="875d1bad-cb47-45bd-ba29-7244ff6931a9" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Veddra/Human</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="ef4234a0-7569-4966-bedf-9c62d6f6da5a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sndvmdwebawa001.azurewebsites.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://sndvmdwebawa001.azurewebsites.net</con:endpoint>
+    </con:endpoints>
+    <con:resource name="GetAnimalSpeciesData" path="/api/Animals/GetAnimalSpeciesData" id="2bf57f63-aff1-4f78-b989-436fd7564153">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GetAnimalSpeciesData" id="4631e979-1536-4864-ad9a-570dc1623878" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:get="https://sndvmdwebawa001.azurewebsites.net/api/Animals/GetAnimalSpeciesData">get:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="GetAnimalSpeciesData" id="63666a50-ac1a-4e15-b14a-3006bcb9934f" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Animals/GetAnimalSpeciesData</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="8effe1ba-14a0-4f75-b6c7-bae8566b712e" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sndvmdwebawa001.azurewebsites.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://sndvmdwebawa001.azurewebsites.net</con:endpoint>
+    </con:endpoints>
+    <con:resource name="ATCVetCodes" path="/api/ATCVetCodes/ATCVetCodes" id="b3d236e5-cd71-4178-9dc4-e8cf9f05c9f9">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="ATCVetCodes" id="697c087b-abaf-4249-9281-0542bf17c35c" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="ATCVetCodes" id="c627d7e1-4149-4f56-9613-6847608fe4d6" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#URI}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/ATCVetCodes/ATCVetCodes</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="18a9e9b3-d324-4a97-8f58-cc05fb8bb8d2" name="SmokeTestVMDAPI">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="7a3bba55-cb7b-4e58-b6c0-25255dc4e2c8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Animals" searchProperties="true">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="GetAnimalSpeciesData" id="49f536cf-f0ef-46cf-b908-41da313264e1">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Animals/GetAnimalSpeciesData" methodName="GetAnimalSpeciesData" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetAnimalSpeciesData" id="63666a50-ac1a-4e15-b14a-3006bcb9934f" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://sndvmdwebawa001.azurewebsites.net</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Animals/GetAnimalSpeciesData</con:originalUri>
+            <con:assertion type="Simple Contains" id="022b82ef-e7ee-4390-9a77-4a3097b866f7" name="Contains">
+              <con:configuration>
+                <token>Amphibia &amp; Reptilia</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:securityTest id="473b508d-6c99-4339-aa0a-435f88b0d198" name="AnimalsecurityTest" failOnError="true" testCaseId="7a3bba55-cb7b-4e58-b6c0-25255dc4e2c8">
+        <con:settings/>
+        <con:properties/>
+        <con:reportParameters/>
+      </con:securityTest>
+    </con:testCase>
+    <con:testCase id="db2f17ee-676a-4047-9886-f9fb8649ed7b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Countries" searchProperties="true">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="OccurCountries" id="d54ea738-c2a0-4dc8-8f99-31037209a7bd">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Countries/OccurCountries" methodName="OccurCountries" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="OccurCountries" id="29adebea-28af-416c-8429-7ce9729c9849" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Countries/OccurCountries</con:originalUri>
+            <con:assertion type="Simple Contains" id="f8709c9a-9929-4fb9-aceb-058d6dd1c46d" name="Contains">
+              <con:configuration>
+                <token>Zimbabwe</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="AuthorisationCountries" id="dad29b30-48a0-48b4-abae-12ecbbe2c7c7">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Countries/AuthorisationCountries" methodName="AuthorisationCountries" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="AuthorisationCountries" id="835dfca6-608d-4d8e-8ecf-96721e5a8a2b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Countries/AuthorisationCountries</con:originalUri>
+            <con:assertion type="Simple Contains" id="9a859219-af77-4773-b434-15e425a19991" name="Contains">
+              <con:configuration>
+                <token>Zambia</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="PrimaryCountries" id="850a6c60-e16a-4283-9889-cb92a0de2068">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Countries/PrimaryCountries" methodName="PrimaryCountries" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="PrimaryCountries" id="16839d0b-a5e3-428e-9687-c56a6b32c36f" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Countries/PrimaryCountries</con:originalUri>
+            <con:assertion type="Simple Contains" id="2ebb99bc-849e-4807-aa93-52d1b09c1ff0" name="Contains">
+              <con:configuration>
+                <token>South Africa</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="60fa1f62-930b-45dd-9c30-b091a716c7ed" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Drugs" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="DosageForms" id="2a6c83b3-c9fe-4b10-a898-db73768a7179">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/DosageForms" methodName="DosageForms" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="DosageForms" id="1f3f355a-bc01-4bc6-9d74-fbc3d7db5d9a" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/DosageForms</con:originalUri>
+            <con:assertion type="Simple Contains" id="93e32045-416a-4b0d-a5d9-b36b6cbb801a" name="Contains">
+              <con:configuration>
+                <token>Granules</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="DosageUnits" id="c30c8759-cc0b-40a2-95ea-109a898a59e2">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/DosageUnits" methodName="DosageUnits" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="DosageUnits" id="08a5237b-89ff-4e9e-b44a-2e0ab623fe92" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/DosageUnits</con:originalUri>
+            <con:assertion type="Simple Contains" id="06d2ca16-753e-48a4-a477-b09b53953e08" name="Contains">
+              <con:configuration>
+                <token>% percent weight/weight</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="AdminRoutes" id="dfa2531a-56be-456a-be80-59ab8fe9619e">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/AdminRoutes" methodName="AdminRoutes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="AdminRoutes" id="606cd87f-1ae8-463c-9ddf-bb75f1defcce" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/AdminRoutes</con:originalUri>
+            <con:assertion type="Simple Contains" id="dd8d60bb-7a2c-4b76-83ae-2abc477ebf5c" name="Contains">
+              <con:configuration>
+                <token>Wing-web-stab use</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Substances" id="e8f5a1d3-84bb-4957-a1c9-743d550bfce8">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/Substances" methodName="Substances" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Substances" id="be30d83b-71cc-406a-a304-fdff1a89e292" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/Substances</con:originalUri>
+            <con:assertion type="Simple Contains" id="dd9ebb6a-60aa-443d-a861-b9871efeef14" name="Contains">
+              <con:configuration>
+                <token/>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="id" value="" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Products" id="85665b0c-efde-4fd2-a0b7-48b79ae4e9e7">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/Products" methodName="Products" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Products" id="09901e18-fe12-41d9-a605-4052531298a8" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/Products</con:originalUri>
+            <con:assertion type="Simple Contains" id="c09fbb45-738c-49a2-86c6-5a7d6087f69e" name="Contains">
+              <con:configuration>
+                <token>Johnson's Flea Guard Collar for Cats</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="ProductByID" id="157cbf05-51a2-4afa-9e62-c767c624f1e5">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/Product/" methodName="ProductByid" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="ProductByID" id="bb3a6fa2-e716-4de9-9604-9a274f97beb3" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/Product/id</con:originalUri>
+            <con:assertion type="Simple Contains" id="51a63396-bc6a-4c36-895e-1738da62f932" name="Contains">
+              <con:configuration>
+                <token>Porcilis Pesti Emulsion for Injection</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="id" value="A05169" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="AuthorisationNumbers" id="00602363-5a83-4ae7-b7a2-7837ed61d211">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/AuthorisationNumbers" methodName="AuthorisationNumbers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="AuthorisationNumbers" id="1cc62d63-5e2e-463d-9080-add979c85bb5" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/AuthorisationNumbers</con:originalUri>
+            <con:assertion type="Simple Contains" id="f765900a-8c30-4063-a16b-cd3b821d4a1c" name="Contains">
+              <con:configuration>
+                <token>EU/2/99/016/001-006</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="AuthorisationCompanies" id="f8bb44e8-9d30-497b-a5f7-87293e300690">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Drug/AuthorisationCompanies" methodName="AuthorisationCompanies" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="AuthorisationCompanies" id="e25535a5-6ff1-40f3-b8de-b9b28b0821c3" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Drug/AuthorisationCompanies</con:originalUri>
+            <con:assertion type="Simple Contains" id="e4cbf077-af69-4291-8238-ed4ad192ca3d" name="Contains">
+              <con:configuration>
+                <token>University of Nottingham</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="5eb3a6aa-6d18-4990-8c2c-d592c585f61a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ATCVetCodes" searchProperties="true">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="ATCVetCodes" id="3658c70d-ed1a-4126-9e2d-d8f736b86cfd">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/ATCVetCodes/ATCVetCodes" methodName="ATCVetCodes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="ATCVetCodes" id="c627d7e1-4149-4f56-9613-6847608fe4d6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/ATCVetCodes/ATCVetCodes</con:originalUri>
+            <con:assertion type="Simple Contains" id="68c14d16-ca36-4c12-a1d4-3f2d79e34670" name="Contains">
+              <con:configuration>
+                <token>radium (223Ra) dichloride</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="7f9eb8a2-0d4a-4d99-a6ef-30a2c9b5c08f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Veddra" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Animal" id="fb922e2e-63d4-4866-84d6-14d647fe11a2">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Veddra/Animal" methodName="Animal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Animal" id="4f9dfd02-3ede-4489-90f6-1a477f224302" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Veddra/Animal</con:originalUri>
+            <con:assertion type="Simple Contains" id="0900313f-a5ef-4689-bcc7-49b5cce76822" name="Contains">
+              <con:configuration>
+                <token>Synovial fluid, high white blood cell count</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Human" id="c1341807-a202-435b-85d6-29d0a6b5e60d">
+        <con:settings/>
+        <con:config service="https://sndvmdwebawa001.azurewebsites.net" resourcePath="/api/Veddra/Human" methodName="Human" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Human" id="875d1bad-cb47-45bd-ba29-7244ff6931a9" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token} " xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#URI}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://sndvmdwebawa001.azurewebsites.net/api/Veddra/Human</con:originalUri>
+            <con:assertion type="Simple Contains" id="36acf553-10b4-4202-9f5c-625148d33d14" name="Contains">
+              <con:configuration>
+                <token>Synovial fluid, high protein level</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:properties>
+    <con:property>
+      <con:name>Token</con:name>
+      <con:value>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imk2bEdrM0ZaenhSY1ViMkMzbkVRN3N5SEpsWSIsImtpZCI6Imk2bEdrM0ZaenhSY1ViMkMzbkVRN3N5SEpsWSJ9.eyJhdWQiOiJodHRwczovL0VVWC1WTUQtU05ELUF1dGgxLmF6dXJlLmxvY2FsIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzcwYTI0NTAtMDIyNy00YzYyLTkwYzctNGUzODUzN2YxMTAyLyIsImlhdCI6MTU0MDgyNjg2OSwibmJmIjoxNTQwODI2ODY5LCJleHAiOjE1NDA4MzA3NjksImFpbyI6IjQyUmdZTGpFUEhGcit5T05qK3FPaC9WUEZPMC9BQUE9IiwiYXBwaWQiOiI5OWNlYTU2OC1iNDZkLTRjMmMtOTNiZi0zOTI2ZDY4M2M2NGIiLCJhcHBpZGFjciI6IjEiLCJlX2V4cCI6MjYyODAwLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NzBhMjQ1MC0wMjI3LTRjNjItOTBjNy00ZTM4NTM3ZjExMDIvIiwidGlkIjoiNzcwYTI0NTAtMDIyNy00YzYyLTkwYzctNGUzODUzN2YxMTAyIiwidXRpIjoieHNSRHdXdC0yRTZhN3NrT3h0aE5BQSIsInZlciI6IjEuMCJ9.X7wrc_LrncWt-15y-RJldDOxSiDodi9oedmxzDaYp_UFNycG5qZz5WXFoFvIb3eYn4IsetUM_IU5opc_-CsWoIYxV70HX5lBOiOe2QCJn_U6bpozJIuB5jWmMupPHQ6ht7BC_AaRGwrXHd9Fvad3A-D5xFDZc0qsUsXOT50IGhGdV0HEQdTFOrrPVJ-ku4fsjdQD6JTGNaVlWvhUoNjj-hSDS13ua1zOugTowAOEbKfBfbYAboZWRLAH8yD-QnQW3OxPOWe_fY0MOiqXPn1sWKq2ODQpNk693lU6ABI_Os4pcel1rArRB0Tq49koTlJCDRpafKSnP6FhPiHeeAB14A</con:value>
+    </con:property>
+    <con:property>
+      <con:name>URI</con:name>
+      <con:value>https://sndvmdwebawa001.azurewebsites.net</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:sensitiveInformation/>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
